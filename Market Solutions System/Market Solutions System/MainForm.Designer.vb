@@ -25,13 +25,15 @@ Partial Class MainForm
         MenuStrip1 = New MenuStrip()
         SalesToolStripMenuItem = New ToolStripMenuItem()
         CashSalesToolStripMenuItem = New ToolStripMenuItem()
+        ProductToolStripMenuItem = New ToolStripMenuItem()
+        EmployeeToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
         ' MenuStrip1
         ' 
         MenuStrip1.ImageScalingSize = New Size(20, 20)
-        MenuStrip1.Items.AddRange(New ToolStripItem() {SalesToolStripMenuItem})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {SalesToolStripMenuItem, ProductToolStripMenuItem, EmployeeToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Size = New Size(800, 28)
@@ -51,6 +53,18 @@ Partial Class MainForm
         CashSalesToolStripMenuItem.Size = New Size(224, 26)
         CashSalesToolStripMenuItem.Text = "Cash Sales"
         ' 
+        ' ProductToolStripMenuItem
+        ' 
+        ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
+        ProductToolStripMenuItem.Size = New Size(74, 24)
+        ProductToolStripMenuItem.Text = "Product"
+        ' 
+        ' EmployeeToolStripMenuItem
+        ' 
+        EmployeeToolStripMenuItem.Name = "EmployeeToolStripMenuItem"
+        EmployeeToolStripMenuItem.Size = New Size(89, 24)
+        EmployeeToolStripMenuItem.Text = "Employee"
+        ' 
         ' MainForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -69,4 +83,6 @@ Partial Class MainForm
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents SalesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CashSalesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProductToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EmployeeToolStripMenuItem As ToolStripMenuItem
 End Class
