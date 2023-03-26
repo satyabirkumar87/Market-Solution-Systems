@@ -25,11 +25,12 @@ CREATE TABLE product (
 
 
 CREATE TABLE customer (
-	ID		TEXT(8) PRIMARY KEY,
-	Name	TEXT	NOT NULL,
-	Gender	TEXT	NOT NULL,
-	PhoneNo	TEXT	NOT NULL,
-	Address	TEXT	NOT NULL
+	ID		TEXT(8)	NOT NULL,
+	Username	TEXT		PRIMARY KEY,
+	Password	TEXT		NOT NULL,
+	Gender	TEXT		NOT NULL,
+	PhoneNo	TEXT(10)	Not NULL,
+	Address	TEXT		NOT NULL
 );
 
 

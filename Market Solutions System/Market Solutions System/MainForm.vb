@@ -11,8 +11,6 @@ Public Class MainForm
         dbPath = IO.Path.Combine(path, "..\..\..\database.db")
         connString = $"Data Source={dbPath}"
         conn = New SQLiteConnection(connString)
-        conn.Open()
-        conn.Close()
     End Sub
 
 
