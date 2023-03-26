@@ -8,24 +8,33 @@ Public Class AddProductForm
 
     Private Sub FillCombo()
         conn.Open()
-        Dim cmd As New SQLiteCommand("select * from product", conn)
-        Dim adapter As New SQLiteDataAdapter(cmd)
-        Dim Tbl As New DataTable()
-        adapter.Fill(Tbl)
-        ComboBox1.DataSource = Tbl
-        ComboBox1.DisplayMember = "Name"
-        ComboBox1.ValueMember = "Name"
+        Dim cmd As New SQLiteCommand("select * from company", conn)
+        Dim reader = cmd.ExecuteReader()
+        While reader.Read()
+            CompCb.Items.Add(reader("Name"))
+        End While
         conn.Close()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim prodName As String = ProdNameTB.Text
+        Dim quantity As String = QtyTB.Text
+        Dim price As Integer = CInt(UnitPriceTB.Text)
+        Dim compName As String = CompCb.Text
+
         conn.Open()
         Dim query As String
-        query = " insert into product values('" & TextBox1.Text & "', '" & TextBox3.Text & "', '" & ComboBox1.SelectedValue & "','" & TextBox4.Text & "', '" & TextBox2.Text & "')"
-        Dim cmd As SQLiteCommand
-        cmd = New SQLiteCommand(query, conn)
+        ' query = " insert into product values('" & ProdName.Text & "', '" & CompCb.SelectedValue.ToString() & "'," & UnitPrice.Text & ", " & Qty.Text & ")"
+        query = $"INSERT INTO product VALUES ('{prodName}', '{compName}', {price}, {quantity})"
+
+        MessageBox.Show(query)
+        Dim cmd = New SQLiteCommand(query, conn)
         cmd.ExecuteNonQuery()
         MsgBox("Product Added Successfully")
         conn.Close()
+    End Sub
+
+    Private Sub AddProductForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        FillCombo()
     End Sub
 End Class

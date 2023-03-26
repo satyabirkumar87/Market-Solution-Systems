@@ -22,77 +22,78 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        MenuStrip1 = New MenuStrip()
-        SalesToolStripMenuItem = New ToolStripMenuItem()
-        CashSalesToolStripMenuItem = New ToolStripMenuItem()
-        ProductToolStripMenuItem = New ToolStripMenuItem()
-        AddProductToolStripMenuItem = New ToolStripMenuItem()
-        ViewProductsToolStripMenuItem = New ToolStripMenuItem()
-        EmployeeToolStripMenuItem = New ToolStripMenuItem()
-        MenuStrip1.SuspendLayout()
-        SuspendLayout()
-        ' 
-        ' MenuStrip1
-        ' 
-        MenuStrip1.ImageScalingSize = New Size(20, 20)
-        MenuStrip1.Items.AddRange(New ToolStripItem() {SalesToolStripMenuItem, ProductToolStripMenuItem, EmployeeToolStripMenuItem})
-        MenuStrip1.Location = New Point(0, 0)
-        MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(800, 28)
-        MenuStrip1.TabIndex = 0
-        MenuStrip1.Text = "MenuStrip1"
-        ' 
-        ' SalesToolStripMenuItem
-        ' 
-        SalesToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {CashSalesToolStripMenuItem})
-        SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
-        SalesToolStripMenuItem.Size = New Size(57, 24)
-        SalesToolStripMenuItem.Text = "Sales"
-        ' 
-        ' CashSalesToolStripMenuItem
-        ' 
-        CashSalesToolStripMenuItem.Name = "CashSalesToolStripMenuItem"
-        CashSalesToolStripMenuItem.Size = New Size(161, 26)
-        CashSalesToolStripMenuItem.Text = "Cash Sales"
-        ' 
-        ' ProductToolStripMenuItem
-        ' 
-        ProductToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddProductToolStripMenuItem, ViewProductsToolStripMenuItem})
-        ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
-        ProductToolStripMenuItem.Size = New Size(74, 24)
-        ProductToolStripMenuItem.Text = "Product"
-        ' 
-        ' AddProductToolStripMenuItem
-        ' 
-        AddProductToolStripMenuItem.Name = "AddProductToolStripMenuItem"
-        AddProductToolStripMenuItem.Size = New Size(224, 26)
-        AddProductToolStripMenuItem.Text = "Add Product"
-        ' 
-        ' ViewProductsToolStripMenuItem
-        ' 
-        ViewProductsToolStripMenuItem.Name = "ViewProductsToolStripMenuItem"
-        ViewProductsToolStripMenuItem.Size = New Size(224, 26)
-        ViewProductsToolStripMenuItem.Text = "View Products"
-        ' 
-        ' EmployeeToolStripMenuItem
-        ' 
-        EmployeeToolStripMenuItem.Name = "EmployeeToolStripMenuItem"
-        EmployeeToolStripMenuItem.Size = New Size(89, 24)
-        EmployeeToolStripMenuItem.Text = "Employee"
-        ' 
-        ' MainForm
-        ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
-        AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(MenuStrip1)
-        MainMenuStrip = MenuStrip1
-        Name = "MainForm"
-        Text = "Form1"
-        MenuStrip1.ResumeLayout(False)
-        MenuStrip1.PerformLayout()
-        ResumeLayout(False)
-        PerformLayout()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.SalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CashSalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewProductsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmployeeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalesToolStripMenuItem, Me.ProductToolStripMenuItem, Me.EmployeeToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip1.TabIndex = 0
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'SalesToolStripMenuItem
+        '
+        Me.SalesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CashSalesToolStripMenuItem})
+        Me.SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
+        Me.SalesToolStripMenuItem.Size = New System.Drawing.Size(57, 24)
+        Me.SalesToolStripMenuItem.Text = "Sales"
+        '
+        'CashSalesToolStripMenuItem
+        '
+        Me.CashSalesToolStripMenuItem.Name = "CashSalesToolStripMenuItem"
+        Me.CashSalesToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
+        Me.CashSalesToolStripMenuItem.Text = "Cash Sales"
+        '
+        'ProductToolStripMenuItem
+        '
+        Me.ProductToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddProductToolStripMenuItem, Me.ViewProductsToolStripMenuItem})
+        Me.ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
+        Me.ProductToolStripMenuItem.Size = New System.Drawing.Size(74, 24)
+        Me.ProductToolStripMenuItem.Text = "Product"
+        '
+        'AddProductToolStripMenuItem
+        '
+        Me.AddProductToolStripMenuItem.Name = "AddProductToolStripMenuItem"
+        Me.AddProductToolStripMenuItem.Size = New System.Drawing.Size(185, 26)
+        Me.AddProductToolStripMenuItem.Text = "Add Product"
+        '
+        'ViewProductsToolStripMenuItem
+        '
+        Me.ViewProductsToolStripMenuItem.Name = "ViewProductsToolStripMenuItem"
+        Me.ViewProductsToolStripMenuItem.Size = New System.Drawing.Size(185, 26)
+        Me.ViewProductsToolStripMenuItem.Text = "View Products"
+        '
+        'EmployeeToolStripMenuItem
+        '
+        Me.EmployeeToolStripMenuItem.Name = "EmployeeToolStripMenuItem"
+        Me.EmployeeToolStripMenuItem.Size = New System.Drawing.Size(86, 24)
+        Me.EmployeeToolStripMenuItem.Text = "Customer"
+        '
+        'MainForm
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
+        Me.Name = "MainForm"
+        Me.Text = "Form1"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
     Friend WithEvents MenuStrip1 As MenuStrip
