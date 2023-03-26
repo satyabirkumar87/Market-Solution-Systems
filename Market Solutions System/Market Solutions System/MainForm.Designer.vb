@@ -26,6 +26,8 @@ Partial Class MainForm
         SalesToolStripMenuItem = New ToolStripMenuItem()
         CashSalesToolStripMenuItem = New ToolStripMenuItem()
         ProductToolStripMenuItem = New ToolStripMenuItem()
+        AddProductToolStripMenuItem = New ToolStripMenuItem()
+        ViewProductsToolStripMenuItem = New ToolStripMenuItem()
         EmployeeToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
@@ -50,14 +52,27 @@ Partial Class MainForm
         ' CashSalesToolStripMenuItem
         ' 
         CashSalesToolStripMenuItem.Name = "CashSalesToolStripMenuItem"
-        CashSalesToolStripMenuItem.Size = New Size(224, 26)
+        CashSalesToolStripMenuItem.Size = New Size(161, 26)
         CashSalesToolStripMenuItem.Text = "Cash Sales"
         ' 
         ' ProductToolStripMenuItem
         ' 
+        ProductToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddProductToolStripMenuItem, ViewProductsToolStripMenuItem})
         ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
         ProductToolStripMenuItem.Size = New Size(74, 24)
         ProductToolStripMenuItem.Text = "Product"
+        ' 
+        ' AddProductToolStripMenuItem
+        ' 
+        AddProductToolStripMenuItem.Name = "AddProductToolStripMenuItem"
+        AddProductToolStripMenuItem.Size = New Size(224, 26)
+        AddProductToolStripMenuItem.Text = "Add Product"
+        ' 
+        ' ViewProductsToolStripMenuItem
+        ' 
+        ViewProductsToolStripMenuItem.Name = "ViewProductsToolStripMenuItem"
+        ViewProductsToolStripMenuItem.Size = New Size(224, 26)
+        ViewProductsToolStripMenuItem.Text = "View Products"
         ' 
         ' EmployeeToolStripMenuItem
         ' 
@@ -85,4 +100,6 @@ Partial Class MainForm
     Friend WithEvents CashSalesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProductToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmployeeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AddProductToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ViewProductsToolStripMenuItem As ToolStripMenuItem
 End Class

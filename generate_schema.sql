@@ -1,22 +1,25 @@
 CREATE TABLE cash_sale (
 	ID			INTEGER PRIMARY KEY,
 	ProductID	INTEGER NOT NULL,
-	SaleDate	Text,
+	SaleDate	TEXT,
 	Discount	INTEGER NOT NULL,
 );
 
 
 
-CREATE TABLE Product (
+CREATE TABLE product (
 	ID 		INTEGER PRIMARY KEY,
-	Name	Text	NOT NULL,
+	Name	TEXT	NOT NULL,
 	CompanyID	INTEGER REFERENCES Company(ID),
-	Price		Text	NOT NULL,
-	ExpiryDate	Text	NOT NULL
+	Price		TEXT	NOT NULL,
+	ExpiryDate	TEXT	NOT NULL
 );
 
 
 
 CREATE TABLE stock (
-	ID	INTEGER Re
+	ProductId	INTEGER REFERENCES Product(ID),
+	CompanyId	INTEGER	REFERENCES Company(ID),
+	Quantity	INTEGER NOT NULL,
+	ProductName	TEXT NOT NULL
 );

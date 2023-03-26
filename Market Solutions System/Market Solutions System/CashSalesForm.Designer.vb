@@ -28,13 +28,6 @@ Partial Class CashSalesForm
         Label2 = New Label()
         Label1 = New Label()
         DataGridView1 = New DataGridView()
-        ItemCode = New DataGridViewTextBoxColumn()
-        UniqueId = New DataGridViewTextBoxColumn()
-        Quantity = New DataGridViewTextBoxColumn()
-        discount = New DataGridViewTextBoxColumn()
-        amt = New DataGridViewTextBoxColumn()
-        tax = New DataGridViewTextBoxColumn()
-        rate = New DataGridViewTextBoxColumn()
         Label3 = New Label()
         Label4 = New Label()
         Label5 = New Label()
@@ -50,6 +43,13 @@ Partial Class CashSalesForm
         GroupBox2 = New GroupBox()
         Button1 = New Button()
         Button2 = New Button()
+        ItemCode = New DataGridViewTextBoxColumn()
+        UniqueId = New DataGridViewTextBoxColumn()
+        Quantity = New DataGridViewTextBoxColumn()
+        discount = New DataGridViewTextBoxColumn()
+        amt = New DataGridViewTextBoxColumn()
+        tax = New DataGridViewTextBoxColumn()
+        rate = New DataGridViewTextBoxColumn()
         GroupBox1.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox2.SuspendLayout()
@@ -110,55 +110,6 @@ Partial Class CashSalesForm
         DataGridView1.RowTemplate.Height = 29
         DataGridView1.Size = New Size(776, 188)
         DataGridView1.TabIndex = 4
-        ' 
-        ' ItemCode
-        ' 
-        ItemCode.HeaderText = "Item Code"
-        ItemCode.MinimumWidth = 6
-        ItemCode.Name = "ItemCode"
-        ItemCode.Width = 125
-        ' 
-        ' UniqueId
-        ' 
-        UniqueId.HeaderText = "Uniue ID"
-        UniqueId.MinimumWidth = 6
-        UniqueId.Name = "UniqueId"
-        UniqueId.Width = 125
-        ' 
-        ' Quantity
-        ' 
-        Quantity.HeaderText = "Quantity"
-        Quantity.MinimumWidth = 6
-        Quantity.Name = "Quantity"
-        Quantity.Width = 125
-        ' 
-        ' discount
-        ' 
-        discount.HeaderText = "Discount"
-        discount.MinimumWidth = 6
-        discount.Name = "discount"
-        discount.Width = 125
-        ' 
-        ' amt
-        ' 
-        amt.HeaderText = "Amount"
-        amt.MinimumWidth = 6
-        amt.Name = "amt"
-        amt.Width = 125
-        ' 
-        ' tax
-        ' 
-        tax.HeaderText = "Tax"
-        tax.MinimumWidth = 6
-        tax.Name = "tax"
-        tax.Width = 125
-        ' 
-        ' rate
-        ' 
-        rate.HeaderText = "Rate"
-        rate.MinimumWidth = 6
-        rate.Name = "rate"
-        rate.Width = 125
         ' 
         ' Label3
         ' 
@@ -295,6 +246,55 @@ Partial Class CashSalesForm
         Button2.Text = "Remove"
         Button2.UseVisualStyleBackColor = True
         ' 
+        ' ItemCode
+        ' 
+        ItemCode.HeaderText = "Item Code"
+        ItemCode.MinimumWidth = 6
+        ItemCode.Name = "ItemCode"
+        ItemCode.Width = 125
+        ' 
+        ' UniqueId
+        ' 
+        UniqueId.HeaderText = "Unique ID"
+        UniqueId.MinimumWidth = 6
+        UniqueId.Name = "UniqueId"
+        UniqueId.Width = 125
+        ' 
+        ' Quantity
+        ' 
+        Quantity.HeaderText = "Quantity"
+        Quantity.MinimumWidth = 6
+        Quantity.Name = "Quantity"
+        Quantity.Width = 125
+        ' 
+        ' discount
+        ' 
+        discount.HeaderText = "Discount"
+        discount.MinimumWidth = 6
+        discount.Name = "discount"
+        discount.Width = 125
+        ' 
+        ' amt
+        ' 
+        amt.HeaderText = "Amount"
+        amt.MinimumWidth = 6
+        amt.Name = "amt"
+        amt.Width = 125
+        ' 
+        ' tax
+        ' 
+        tax.HeaderText = "Tax"
+        tax.MinimumWidth = 6
+        tax.Name = "tax"
+        tax.Width = 125
+        ' 
+        ' rate
+        ' 
+        rate.HeaderText = "Rate"
+        rate.MinimumWidth = 6
+        rate.Name = "rate"
+        rate.Width = 125
+        ' 
         ' CashSalesForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -320,13 +320,6 @@ Partial Class CashSalesForm
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents ItemCode As DataGridViewTextBoxColumn
-    Friend WithEvents UniqueId As DataGridViewTextBoxColumn
-    Friend WithEvents Quantity As DataGridViewTextBoxColumn
-    Friend WithEvents discount As DataGridViewTextBoxColumn
-    Friend WithEvents amt As DataGridViewTextBoxColumn
-    Friend WithEvents tax As DataGridViewTextBoxColumn
-    Friend WithEvents rate As DataGridViewTextBoxColumn
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
@@ -343,4 +336,11 @@ Partial Class CashSalesForm
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents ItemCode As DataGridViewTextBoxColumn
+    Friend WithEvents UniqueId As DataGridViewTextBoxColumn
+    Friend WithEvents Quantity As DataGridViewTextBoxColumn
+    Friend WithEvents discount As DataGridViewTextBoxColumn
+    Friend WithEvents amt As DataGridViewTextBoxColumn
+    Friend WithEvents tax As DataGridViewTextBoxColumn
+    Friend WithEvents rate As DataGridViewTextBoxColumn
 End Class

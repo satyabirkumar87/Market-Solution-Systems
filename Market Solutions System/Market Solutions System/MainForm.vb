@@ -20,4 +20,9 @@ Public Class MainForm
         Me.Hide()
         CashSalesForm.Show()
     End Sub
+
+    Private Sub AddProductToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddProductToolStripMenuItem.Click
+        Me.Hide()
+        AddProductForm.Show()
+    End Sub
 End Class
