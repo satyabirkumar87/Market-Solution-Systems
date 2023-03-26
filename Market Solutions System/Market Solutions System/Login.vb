@@ -36,11 +36,19 @@ Public Class Login
                 MessageBox.Show("Login Successfull")
                 conn.Close()
                 Me.Hide()
-                MainForm.Show()
+                CustomerHomeForm.Show()
             End If
         Else
             MessageBox.Show("Login Failed")
         End If
         conn.Close()
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub custPasswordTB_TextChanged(sender As Object, e As EventArgs) Handles custPasswordTB.TextChanged
+
     End Sub
 End Class

@@ -1,7 +1,4 @@
-﻿Imports System
-Imports System.Data
-Imports System.Data.SqlClient
-Imports System.Data.SQLite
+﻿Imports System.Data.SQLite
 
 Public Class AddProductForm
     Private conn As SQLiteConnection = MainForm.conn

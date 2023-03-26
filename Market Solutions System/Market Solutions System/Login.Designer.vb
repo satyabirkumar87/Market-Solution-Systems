@@ -79,6 +79,7 @@ Partial Class Login
         Me.admPasswordTB.Name = "admPasswordTB"
         Me.admPasswordTB.Size = New System.Drawing.Size(125, 27)
         Me.admPasswordTB.TabIndex = 3
+        Me.admPasswordTB.UseSystemPasswordChar = True
         '
         'admUsernameTB
         '
@@ -134,6 +135,7 @@ Partial Class Login
         Me.custPasswordTB.Name = "custPasswordTB"
         Me.custPasswordTB.Size = New System.Drawing.Size(125, 27)
         Me.custPasswordTB.TabIndex = 3
+        Me.custPasswordTB.UseSystemPasswordChar = True
         '
         'custUsernameTB
         '
