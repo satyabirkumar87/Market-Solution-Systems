@@ -1,25 +1,55 @@
 CREATE TABLE cash_sale (
-	ID			INTEGER PRIMARY KEY,
+	ID			TEXT(8)	PRIMARY KEY,
 	ProductID	INTEGER NOT NULL,
-	SaleDate	TEXT,
-	Discount	INTEGER NOT NULL,
+	SaleDate	TEXT	NOT NULL,
+	Discount	INTEGER NOT NULL
 );
 
 
 
 CREATE TABLE product (
-	ID 		INTEGER PRIMARY KEY,
-	Name	TEXT	NOT NULL,
-	CompanyID	INTEGER REFERENCES Company(ID),
-	Price		TEXT	NOT NULL,
-	ExpiryDate	TEXT	NOT NULL
+	ID			TEXT(8) PRIMARY KEY,
+	Name		TEXT	NOT NULL,
+	CompanyID	TEXT(8) REFERENCES	Company(ID),
+	CompanyName	TEXT	REFERENCES	Company(Name),
+	Price		INTEGER	NOT NULL,
+	ExpiryDate	TEXT	NOT NULL,
+	ProdQty		INTEGER	NOT NULL
 );
 
 
 
 CREATE TABLE stock (
-	ProductId	INTEGER REFERENCES Product(ID),
+	ProductId	TEXT(8) REFERENCES Product(ID),
 	CompanyId	INTEGER	REFERENCES Company(ID),
 	Quantity	INTEGER NOT NULL,
 	ProductName	TEXT NOT NULL
+);
+
+
+CREATE TABLE customer(
+	ID		TEXT(8) PRIMARY KEY,
+	Name	TEXT	NOT NULL,
+	Gender	TEXT	NOT NULL,
+	PhoneNo	TEXT	NOT NULL,
+	Address	TEXT	NOT NULL
+);
+
+
+
+CREATE TABLE employee(
+	ID TEXT(8) PRIMARY KEY,
+	Name	TEXT	NOT NULL,
+	-- DesignationID TEXT,
+	PhoneNo	TEXT	NOT NULL,
+	Address	TEXT	NOT NULL,
+	Salary	TEXT	NOT NULL
+);
+
+
+create table company(
+	ID		TEXT PRIMARY KEY,
+	Name	TEXT	NOT NULL,
+	Address	TEXT	NOT NULL,
+	PhoneNo	TEXT	NOT NULL
 );
