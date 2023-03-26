@@ -29,6 +29,7 @@ Partial Class ViewProducts
         compName = New DataGridViewTextBoxColumn()
         prodPrice = New DataGridViewTextBoxColumn()
         prodQty = New DataGridViewTextBoxColumn()
+        backBtn = New Button()
         CType(ProductGV, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -91,11 +92,21 @@ Partial Class ViewProducts
         prodQty.MinimumWidth = 6
         prodQty.Name = "prodQty"
         ' 
+        ' backBtn
+        ' 
+        backBtn.Location = New Point(1156, 29)
+        backBtn.Name = "backBtn"
+        backBtn.Size = New Size(94, 29)
+        backBtn.TabIndex = 3
+        backBtn.Text = "< Go Back"
+        backBtn.UseVisualStyleBackColor = True
+        ' 
         ' ViewProducts
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1348, 721)
+        Controls.Add(backBtn)
         Controls.Add(ProductGV)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -113,4 +124,5 @@ Partial Class ViewProducts
     Friend WithEvents compName As DataGridViewTextBoxColumn
     Friend WithEvents prodPrice As DataGridViewTextBoxColumn
     Friend WithEvents prodQty As DataGridViewTextBoxColumn
+    Friend WithEvents backBtn As Button
 End Class

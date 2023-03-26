@@ -37,4 +37,9 @@ Public Class AddProductForm
     Private Sub AddProductForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FillCombo()
     End Sub
+
+    Private Sub backBtn_Click(sender As Object, e As EventArgs) Handles backBtn.Click
+        Me.Hide()
+        MainForm.Show()
+    End Sub
 End Class

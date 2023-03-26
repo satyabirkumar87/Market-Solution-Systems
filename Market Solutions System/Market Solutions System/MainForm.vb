@@ -31,7 +31,8 @@ Public Class MainForm
         ViewProducts.Show()
     End Sub
 
-    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub AddManufacturerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddManufacturerToolStripMenuItem.Click
+        Me.Hide()
+        AddManufacturer.Show()
     End Sub
 End Class

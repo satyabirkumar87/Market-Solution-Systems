@@ -16,4 +16,9 @@ Public Class ViewProducts
         End While
         conn.Close()
     End Sub
+
+    Private Sub backBtn_Click(sender As Object, e As EventArgs) Handles backBtn.Click
+        Me.Hide()
+        MainForm.Show()
+    End Sub
 End Class
