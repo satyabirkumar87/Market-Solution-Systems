@@ -25,4 +25,13 @@ Public Class MainForm
         Me.Hide()
         AddProductForm.Show()
     End Sub
+
+    Private Sub ViewProductsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ViewProductsToolStripMenuItem.Click
+        Me.Hide()
+        ViewProducts.Show()
+    End Sub
+
+    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

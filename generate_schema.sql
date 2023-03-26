@@ -8,26 +8,23 @@ CREATE TABLE cash_sale (
 
 
 CREATE TABLE product (
-	ID			TEXT(8) PRIMARY KEY,
-	Name		TEXT	NOT NULL,
-	CompanyID	TEXT(8) REFERENCES	Company(ID),
+	Name		TEXT	PRIMARY KEY,
 	CompanyName	TEXT	REFERENCES	Company(Name),
 	Price		INTEGER	NOT NULL,
-	ExpiryDate	TEXT	NOT NULL,
 	ProdQty		INTEGER	NOT NULL
 );
 
 
 
-CREATE TABLE stock (
-	ProductId	TEXT(8) REFERENCES Product(ID),
-	CompanyId	INTEGER	REFERENCES Company(ID),
-	Quantity	INTEGER NOT NULL,
-	ProductName	TEXT NOT NULL
-);
+-- CREATE TABLE stock (
+-- 	ProductId	TEXT(8) REFERENCES Product(ID),
+-- 	CompanyId	INTEGER	REFERENCES Company(ID),
+-- 	Quantity	INTEGER NOT NULL,
+-- 	ProductName	TEXT NOT NULL
+-- );
 
 
-CREATE TABLE customer(
+CREATE TABLE customer (
 	ID		TEXT(8) PRIMARY KEY,
 	Name	TEXT	NOT NULL,
 	Gender	TEXT	NOT NULL,
@@ -37,19 +34,17 @@ CREATE TABLE customer(
 
 
 
-CREATE TABLE employee(
-	ID TEXT(8) PRIMARY KEY,
-	Name	TEXT	NOT NULL,
-	-- DesignationID TEXT,
-	PhoneNo	TEXT	NOT NULL,
-	Address	TEXT	NOT NULL,
-	Salary	TEXT	NOT NULL
-);
+-- CREATE TABLE employee (
+-- 	ID TEXT(8) PRIMARY KEY,
+-- 	Name	TEXT	NOT NULL,
+-- 	PhoneNo	TEXT	NOT NULL,
+-- 	Address	TEXT	NOT NULL,
+-- 	Salary	TEXT	NOT NULL
+-- );
 
 
-create table company(
-	ID		TEXT PRIMARY KEY,
-	Name	TEXT	NOT NULL,
+create table company (
+	Name	TEXT	PRIMARY KEY,
 	Address	TEXT	NOT NULL,
 	PhoneNo	TEXT	NOT NULL
 );
