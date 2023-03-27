@@ -62,12 +62,13 @@ Partial Class ProductPurchase
         '
         'ProdNameCB
         '
+        Me.ProdNameCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ProdNameCB.FormattingEnabled = True
+        Me.ProdNameCB.Items.AddRange(New Object() {"coco cola", "Kurkure", "Kitkat", "Jam", "Bourborn", "Lays", "Top", "Amul"})
         Me.ProdNameCB.Location = New System.Drawing.Point(245, 99)
         Me.ProdNameCB.Name = "ProdNameCB"
         Me.ProdNameCB.Size = New System.Drawing.Size(151, 28)
         Me.ProdNameCB.TabIndex = 3
-        Me.ProdNameCB.Text = " "
         '
         'PriceTB
         '

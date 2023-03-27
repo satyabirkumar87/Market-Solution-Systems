@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class CustomerHomeForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,19 +20,21 @@ Partial Class CustomerHomeForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
         Me.ProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PurchaseProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.FeedbackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip3.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip3
         '
         Me.MenuStrip3.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductToolStripMenuItem})
+        Me.MenuStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductToolStripMenuItem, Me.FeedbackToolStripMenuItem})
         Me.MenuStrip3.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip3.Name = "MenuStrip3"
         Me.MenuStrip3.Size = New System.Drawing.Size(800, 33)
@@ -63,6 +65,20 @@ Partial Class CustomerHomeForm
         Me.Button1.Text = "Logout"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'FeedbackToolStripMenuItem
+        '
+        Me.FeedbackToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RateToolStripMenuItem})
+        Me.FeedbackToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
+        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(104, 29)
+        Me.FeedbackToolStripMenuItem.Text = "feedback"
+        '
+        'RateToolStripMenuItem
+        '
+        Me.RateToolStripMenuItem.Name = "RateToolStripMenuItem"
+        Me.RateToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
+        Me.RateToolStripMenuItem.Text = " Rate"
+        '
         'CustomerHomeForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -83,4 +99,6 @@ Partial Class CustomerHomeForm
     Friend WithEvents ProductToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PurchaseProductToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Button1 As Button
+    Friend WithEvents FeedbackToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RateToolStripMenuItem As ToolStripMenuItem
 End Class

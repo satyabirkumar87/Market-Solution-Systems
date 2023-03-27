@@ -10,4 +10,16 @@
 
 
     End Sub
+
+
+
+
+
+    Private Sub CustomerHomeForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub RateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RateToolStripMenuItem.Click
+
+    End Sub
 End Class
