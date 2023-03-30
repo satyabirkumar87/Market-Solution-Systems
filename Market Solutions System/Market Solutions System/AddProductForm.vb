@@ -10,6 +10,7 @@ Public Class AddProductForm
         While reader.Read()
             CompCb.Items.Add(reader("Name"))
         End While
+        reader.Close()
         conn.Close()
     End Sub
 
@@ -24,7 +25,6 @@ Public Class AddProductForm
         ' query = " insert into product values('" & ProdName.Text & "', '" & CompCb.SelectedValue.ToString() & "'," & UnitPrice.Text & ", " & Qty.Text & ")"
         query = $"INSERT INTO product VALUES ('{prodName}', '{compName}', {price}, {quantity})"
 
-        MessageBox.Show(query)
         Dim cmd = New SQLiteCommand(query, conn)
         cmd.ExecuteNonQuery()
         MsgBox("Product Added Successfully")
