@@ -1,6 +1,5 @@
 ﻿Imports System.Data.SQLite
 
-
 Public Class ProductPurchase
     Private conn As SQLiteConnection = Login.conn
     Dim ProductList As New Dictionary(Of String, Integer)
@@ -30,6 +29,7 @@ Public Class ProductPurchase
         While reader.Read()
             ProductList.Add(reader("Name"), reader("Price"))
         End While
+        reader.Close()
         conn.Close()
 
         ' Loop through each key in the dictionary and add it to the dropdown

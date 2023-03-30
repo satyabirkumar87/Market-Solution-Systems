@@ -34,6 +34,7 @@ Public Class Login
         If reader.Read() Then
             If reader("Username") = username And reader("Password") = password Then
                 MessageBox.Show("Login Successfull")
+                reader.Close()
                 conn.Close()
                 Me.Hide()
                 CustomerHomeForm.Show()
@@ -41,6 +42,7 @@ Public Class Login
         Else
             MessageBox.Show("Login Failed")
         End If
+        reader.Close()
         conn.Close()
     End Sub
 
