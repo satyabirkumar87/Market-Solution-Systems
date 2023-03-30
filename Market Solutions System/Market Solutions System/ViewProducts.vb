@@ -14,6 +14,7 @@ Public Class ViewProducts
             ProductGV.Rows(index).Cells("prodPrice").Value = reader("Price")
             ProductGV.Rows(index).Cells("prodQty").Value = reader("ProdQty")
         End While
+        reader.Close()
         conn.Close()
     End Sub
 
