@@ -10,6 +10,7 @@ Public Class AddProductForm
         While reader.Read()
             CompCb.Items.Add(reader("Name"))
         End While
+        reader.Close()
         conn.Close()
     End Sub
 
