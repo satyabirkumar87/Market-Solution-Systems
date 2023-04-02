@@ -44,6 +44,16 @@ Public Class ProductPurchase
     End Sub
 
     Private Sub ProdNameCB_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ProdNameCB.SelectedIndexChanged
-        PriceTB.Text = ProductList.Item(ProdNameCB.Text)
+        If Not String.IsNullOrEmpty(ProdNameCB.Text) AndAlso ProductList.ContainsKey(ProdNameCB.Text) Then
+            PriceTB.Text = ProductList.Item(ProdNameCB.Text)
+        End If
+    End Sub
+
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ProdNameCB.SelectedIndex = -1
+        QtyTB.Clear()
+        PriceTB.Clear()
+        totalTB.Clear()
     End Sub
 End Class

@@ -33,6 +33,7 @@ Partial Class ProductPurchase
         Button1 = New Button()
         Label4 = New Label()
         totalTB = New TextBox()
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -88,7 +89,7 @@ Partial Class ProductPurchase
         ' 
         ' PurchaseBtn
         ' 
-        PurchaseBtn.Location = New Point(244, 337)
+        PurchaseBtn.Location = New Point(210, 337)
         PurchaseBtn.Name = "PurchaseBtn"
         PurchaseBtn.Size = New Size(94, 29)
         PurchaseBtn.TabIndex = 6
@@ -97,7 +98,7 @@ Partial Class ProductPurchase
         ' 
         ' CancelBtn
         ' 
-        CancelBtn.Location = New Point(462, 337)
+        CancelBtn.Location = New Point(496, 337)
         CancelBtn.Name = "CancelBtn"
         CancelBtn.Size = New Size(94, 29)
         CancelBtn.TabIndex = 7
@@ -130,11 +131,21 @@ Partial Class ProductPurchase
         totalTB.Size = New Size(125, 27)
         totalTB.TabIndex = 10
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(351, 337)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(94, 29)
+        Button2.TabIndex = 11
+        Button2.Text = "Reset"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' ProductPurchase
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button2)
         Controls.Add(totalTB)
         Controls.Add(Label4)
         Controls.Add(Button1)
@@ -163,4 +174,5 @@ Partial Class ProductPurchase
     Friend WithEvents Button1 As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents totalTB As TextBox
+    Friend WithEvents Button2 As Button
 End Class
