@@ -1,8 +1,8 @@
 ﻿Imports System.Data.SQLite
 Imports System.Drawing.Printing
 
-
 Public Class BillForm
+    Private WithEvents PrintDocument1 As New Printing.PrintDocument
     Private conn As SQLiteConnection = Login.conn
 
     Public Sub New(totalPrice As Integer)
@@ -26,7 +26,7 @@ Public Class BillForm
         conn.Close()
     End Sub
 
-    Private Sub PrintBtn_Click(sender As Object, e As EventArgs)
+    Private Sub PrintBtn_Click(sender As Object, e As EventArgs) Handles PrintBtn.Click
         PrintDocument1.Print()
     End Sub
 

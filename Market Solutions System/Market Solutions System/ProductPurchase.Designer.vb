@@ -22,145 +22,146 @@ Partial Class ProductPurchase
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Label1 = New Label()
-        Label2 = New Label()
-        Label3 = New Label()
-        ProdNameCB = New ComboBox()
-        PriceTB = New TextBox()
-        QtyTB = New TextBox()
-        PurchaseBtn = New Button()
-        CancelBtn = New Button()
-        Button1 = New Button()
-        Label4 = New Label()
-        totalTB = New TextBox()
-        Button2 = New Button()
-        SuspendLayout()
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(239, 102)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(104, 20)
-        Label1.TabIndex = 0
-        Label1.Text = "Product Name"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(239, 152)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(41, 20)
-        Label2.TabIndex = 1
-        Label2.Text = "Price"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(239, 205)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(65, 20)
-        Label3.TabIndex = 2
-        Label3.Text = "Quantity"
-        ' 
-        ' ProdNameCB
-        ' 
-        ProdNameCB.DropDownStyle = ComboBoxStyle.DropDownList
-        ProdNameCB.FormattingEnabled = True
-        ProdNameCB.Location = New Point(433, 99)
-        ProdNameCB.Name = "ProdNameCB"
-        ProdNameCB.Size = New Size(125, 28)
-        ProdNameCB.TabIndex = 3
-        ' 
-        ' PriceTB
-        ' 
-        PriceTB.Location = New Point(433, 145)
-        PriceTB.Name = "PriceTB"
-        PriceTB.ReadOnly = True
-        PriceTB.Size = New Size(125, 27)
-        PriceTB.TabIndex = 4
-        ' 
-        ' QtyTB
-        ' 
-        QtyTB.Location = New Point(433, 198)
-        QtyTB.Name = "QtyTB"
-        QtyTB.Size = New Size(125, 27)
-        QtyTB.TabIndex = 5
-        ' 
-        ' PurchaseBtn
-        ' 
-        PurchaseBtn.Location = New Point(210, 337)
-        PurchaseBtn.Name = "PurchaseBtn"
-        PurchaseBtn.Size = New Size(94, 29)
-        PurchaseBtn.TabIndex = 6
-        PurchaseBtn.Text = "Purchase"
-        PurchaseBtn.UseVisualStyleBackColor = True
-        ' 
-        ' CancelBtn
-        ' 
-        CancelBtn.Location = New Point(496, 337)
-        CancelBtn.Name = "CancelBtn"
-        CancelBtn.Size = New Size(94, 29)
-        CancelBtn.TabIndex = 7
-        CancelBtn.Text = "Cancel"
-        CancelBtn.UseVisualStyleBackColor = True
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(672, 24)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 8
-        Button1.Text = "Go Back"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(239, 245)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(42, 20)
-        Label4.TabIndex = 9
-        Label4.Text = "Total"
-        ' 
-        ' totalTB
-        ' 
-        totalTB.Location = New Point(433, 244)
-        totalTB.Name = "totalTB"
-        totalTB.ReadOnly = True
-        totalTB.Size = New Size(125, 27)
-        totalTB.TabIndex = 10
-        ' 
-        ' Button2
-        ' 
-        Button2.Location = New Point(351, 337)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(94, 29)
-        Button2.TabIndex = 11
-        Button2.Text = "Reset"
-        Button2.UseVisualStyleBackColor = True
-        ' 
-        ' ProductPurchase
-        ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
-        AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(Button2)
-        Controls.Add(totalTB)
-        Controls.Add(Label4)
-        Controls.Add(Button1)
-        Controls.Add(CancelBtn)
-        Controls.Add(PurchaseBtn)
-        Controls.Add(QtyTB)
-        Controls.Add(PriceTB)
-        Controls.Add(ProdNameCB)
-        Controls.Add(Label3)
-        Controls.Add(Label2)
-        Controls.Add(Label1)
-        Name = "ProductPurchase"
-        Text = "ProductPurchase"
-        ResumeLayout(False)
-        PerformLayout()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ProdNameCB = New System.Windows.Forms.ComboBox()
+        Me.PriceTB = New System.Windows.Forms.TextBox()
+        Me.QtyTB = New System.Windows.Forms.TextBox()
+        Me.PurchaseBtn = New System.Windows.Forms.Button()
+        Me.CancelBtn = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.totalTB = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(239, 102)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(104, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Product Name"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(239, 152)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(41, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Price"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(239, 205)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(65, 20)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Quantity"
+        '
+        'ProdNameCB
+        '
+        Me.ProdNameCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ProdNameCB.FormattingEnabled = True
+        Me.ProdNameCB.Location = New System.Drawing.Point(433, 99)
+        Me.ProdNameCB.Name = "ProdNameCB"
+        Me.ProdNameCB.Size = New System.Drawing.Size(125, 28)
+        Me.ProdNameCB.TabIndex = 3
+        '
+        'PriceTB
+        '
+        Me.PriceTB.Location = New System.Drawing.Point(433, 145)
+        Me.PriceTB.Name = "PriceTB"
+        Me.PriceTB.ReadOnly = True
+        Me.PriceTB.Size = New System.Drawing.Size(125, 27)
+        Me.PriceTB.TabIndex = 4
+        '
+        'QtyTB
+        '
+        Me.QtyTB.Location = New System.Drawing.Point(433, 198)
+        Me.QtyTB.Name = "QtyTB"
+        Me.QtyTB.Size = New System.Drawing.Size(125, 27)
+        Me.QtyTB.TabIndex = 5
+        '
+        'PurchaseBtn
+        '
+        Me.PurchaseBtn.Location = New System.Drawing.Point(210, 337)
+        Me.PurchaseBtn.Name = "PurchaseBtn"
+        Me.PurchaseBtn.Size = New System.Drawing.Size(94, 29)
+        Me.PurchaseBtn.TabIndex = 6
+        Me.PurchaseBtn.Text = "Purchase"
+        Me.PurchaseBtn.UseVisualStyleBackColor = True
+        '
+        'CancelBtn
+        '
+        Me.CancelBtn.Location = New System.Drawing.Point(496, 337)
+        Me.CancelBtn.Name = "CancelBtn"
+        Me.CancelBtn.Size = New System.Drawing.Size(94, 29)
+        Me.CancelBtn.TabIndex = 7
+        Me.CancelBtn.Text = "Add to Bill"
+        Me.CancelBtn.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(672, 24)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(94, 29)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Go Back"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(239, 245)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(42, 20)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "Total"
+        '
+        'totalTB
+        '
+        Me.totalTB.Location = New System.Drawing.Point(433, 244)
+        Me.totalTB.Name = "totalTB"
+        Me.totalTB.ReadOnly = True
+        Me.totalTB.Size = New System.Drawing.Size(125, 27)
+        Me.totalTB.TabIndex = 10
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(351, 337)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(94, 29)
+        Me.Button2.TabIndex = 11
+        Me.Button2.Text = "Reset"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'ProductPurchase
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.totalTB)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.CancelBtn)
+        Me.Controls.Add(Me.PurchaseBtn)
+        Me.Controls.Add(Me.QtyTB)
+        Me.Controls.Add(Me.PriceTB)
+        Me.Controls.Add(Me.ProdNameCB)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Name = "ProductPurchase"
+        Me.Text = "ProductPurchase"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
     Friend WithEvents Label1 As Label
