@@ -22,100 +22,99 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.SalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CashSalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ViewProductsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EmployeeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddManufacturerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.MenuStrip1.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalesToolStripMenuItem, Me.ProductToolStripMenuItem, Me.EmployeeToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 33)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'SalesToolStripMenuItem
-        '
-        Me.SalesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CashSalesToolStripMenuItem})
-        Me.SalesToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
-        Me.SalesToolStripMenuItem.Size = New System.Drawing.Size(69, 29)
-        Me.SalesToolStripMenuItem.Text = "Sales"
-        '
-        'CashSalesToolStripMenuItem
-        '
-        Me.CashSalesToolStripMenuItem.Name = "CashSalesToolStripMenuItem"
-        Me.CashSalesToolStripMenuItem.Size = New System.Drawing.Size(186, 30)
-        Me.CashSalesToolStripMenuItem.Text = "Cash Sales"
-        '
-        'ProductToolStripMenuItem
-        '
-        Me.ProductToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddProductToolStripMenuItem, Me.ViewProductsToolStripMenuItem})
-        Me.ProductToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
-        Me.ProductToolStripMenuItem.Size = New System.Drawing.Size(93, 29)
-        Me.ProductToolStripMenuItem.Text = "Product"
-        '
-        'AddProductToolStripMenuItem
-        '
-        Me.AddProductToolStripMenuItem.Name = "AddProductToolStripMenuItem"
-        Me.AddProductToolStripMenuItem.Size = New System.Drawing.Size(219, 30)
-        Me.AddProductToolStripMenuItem.Text = "Add Product"
-        '
-        'ViewProductsToolStripMenuItem
-        '
-        Me.ViewProductsToolStripMenuItem.Name = "ViewProductsToolStripMenuItem"
-        Me.ViewProductsToolStripMenuItem.Size = New System.Drawing.Size(219, 30)
-        Me.ViewProductsToolStripMenuItem.Text = "View Products"
-        '
-        'EmployeeToolStripMenuItem
-        '
-        Me.EmployeeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddManufacturerToolStripMenuItem})
-        Me.EmployeeToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.EmployeeToolStripMenuItem.Name = "EmployeeToolStripMenuItem"
-        Me.EmployeeToolStripMenuItem.Size = New System.Drawing.Size(143, 29)
-        Me.EmployeeToolStripMenuItem.Text = "Manufacturer"
-        '
-        'AddManufacturerToolStripMenuItem
-        '
-        Me.AddManufacturerToolStripMenuItem.Name = "AddManufacturerToolStripMenuItem"
-        Me.AddManufacturerToolStripMenuItem.Size = New System.Drawing.Size(255, 30)
-        Me.AddManufacturerToolStripMenuItem.Text = "Add Manufacturer"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(587, 123)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Logout"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'MainForm
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "MainForm"
-        Me.Text = "Form1"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        MenuStrip1 = New MenuStrip()
+        SalesToolStripMenuItem = New ToolStripMenuItem()
+        CashSalesToolStripMenuItem = New ToolStripMenuItem()
+        ProductToolStripMenuItem = New ToolStripMenuItem()
+        AddProductToolStripMenuItem = New ToolStripMenuItem()
+        ViewProductsToolStripMenuItem = New ToolStripMenuItem()
+        EmployeeToolStripMenuItem = New ToolStripMenuItem()
+        AddManufacturerToolStripMenuItem = New ToolStripMenuItem()
+        Button1 = New Button()
+        MenuStrip1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' MenuStrip1
+        ' 
+        MenuStrip1.ImageScalingSize = New Size(20, 20)
+        MenuStrip1.Items.AddRange(New ToolStripItem() {SalesToolStripMenuItem, ProductToolStripMenuItem, EmployeeToolStripMenuItem})
+        MenuStrip1.Location = New Point(0, 0)
+        MenuStrip1.Name = "MenuStrip1"
+        MenuStrip1.Size = New Size(800, 33)
+        MenuStrip1.TabIndex = 0
+        MenuStrip1.Text = "MenuStrip1"
+        ' 
+        ' SalesToolStripMenuItem
+        ' 
+        SalesToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {CashSalesToolStripMenuItem})
+        SalesToolStripMenuItem.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
+        SalesToolStripMenuItem.Size = New Size(69, 29)
+        SalesToolStripMenuItem.Text = "Sales"
+        ' 
+        ' CashSalesToolStripMenuItem
+        ' 
+        CashSalesToolStripMenuItem.Name = "CashSalesToolStripMenuItem"
+        CashSalesToolStripMenuItem.Size = New Size(224, 30)
+        CashSalesToolStripMenuItem.Text = "Bill"
+        ' 
+        ' ProductToolStripMenuItem
+        ' 
+        ProductToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddProductToolStripMenuItem, ViewProductsToolStripMenuItem})
+        ProductToolStripMenuItem.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
+        ProductToolStripMenuItem.Size = New Size(93, 29)
+        ProductToolStripMenuItem.Text = "Product"
+        ' 
+        ' AddProductToolStripMenuItem
+        ' 
+        AddProductToolStripMenuItem.Name = "AddProductToolStripMenuItem"
+        AddProductToolStripMenuItem.Size = New Size(219, 30)
+        AddProductToolStripMenuItem.Text = "Add Product"
+        ' 
+        ' ViewProductsToolStripMenuItem
+        ' 
+        ViewProductsToolStripMenuItem.Name = "ViewProductsToolStripMenuItem"
+        ViewProductsToolStripMenuItem.Size = New Size(219, 30)
+        ViewProductsToolStripMenuItem.Text = "View Products"
+        ' 
+        ' EmployeeToolStripMenuItem
+        ' 
+        EmployeeToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddManufacturerToolStripMenuItem})
+        EmployeeToolStripMenuItem.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        EmployeeToolStripMenuItem.Name = "EmployeeToolStripMenuItem"
+        EmployeeToolStripMenuItem.Size = New Size(143, 29)
+        EmployeeToolStripMenuItem.Text = "Manufacturer"
+        ' 
+        ' AddManufacturerToolStripMenuItem
+        ' 
+        AddManufacturerToolStripMenuItem.Name = "AddManufacturerToolStripMenuItem"
+        AddManufacturerToolStripMenuItem.Size = New Size(255, 30)
+        AddManufacturerToolStripMenuItem.Text = "Add Manufacturer"
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(587, 123)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 29)
+        Button1.TabIndex = 1
+        Button1.Text = "Logout"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' MainForm
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(Button1)
+        Controls.Add(MenuStrip1)
+        MainMenuStrip = MenuStrip1
+        Name = "MainForm"
+        Text = "Form1"
+        MenuStrip1.ResumeLayout(False)
+        MenuStrip1.PerformLayout()
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents MenuStrip1 As MenuStrip

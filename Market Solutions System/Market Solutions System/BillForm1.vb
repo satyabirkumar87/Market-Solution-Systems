@@ -1,9 +1,10 @@
 ﻿Imports System.Data.SQLite
 Imports System.Drawing.Printing
 
-Public Class BillForm
-    Private WithEvents PrintDocument1 As New Printing.PrintDocument
+Public Class BillForm1
     Private conn As SQLiteConnection = Login.conn
+    Private WithEvents PrintDocument1 As New Printing.PrintDocument
+
 
     Public Sub New(totalPrice As Integer)
         InitializeComponent()

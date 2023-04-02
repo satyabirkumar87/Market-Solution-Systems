@@ -13,12 +13,6 @@ Public Class MainForm
         conn = New SQLiteConnection(connString)
     End Sub
 
-
-    Private Sub CashSalesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CashSalesToolStripMenuItem.Click
-        Me.Hide()
-        CashSalesForm.Show()
-    End Sub
-
     Private Sub AddProductToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddProductToolStripMenuItem.Click
         Me.Hide()
         AddProductForm.Show()
@@ -37,5 +31,10 @@ Public Class MainForm
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Login.Show()
+    End Sub
+
+    Private Sub CashSalesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CashSalesToolStripMenuItem.Click
+        Me.Hide()
+        BillForm1.Show()
     End Sub
 End Class

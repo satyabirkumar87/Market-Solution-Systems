@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class BillForm
+Partial Class BillForm1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -40,7 +40,7 @@ Partial Class BillForm
         ' 
         ' PrintBtn
         ' 
-        PrintBtn.Location = New Point(567, 535)
+        PrintBtn.Location = New Point(560, 423)
         PrintBtn.Name = "PrintBtn"
         PrintBtn.Size = New Size(94, 29)
         PrintBtn.TabIndex = 1
@@ -50,21 +50,21 @@ Partial Class BillForm
         ' TotalPriceLabel
         ' 
         TotalPriceLabel.AutoSize = True
-        TotalPriceLabel.Location = New Point(12, 438)
+        TotalPriceLabel.Location = New Point(12, 393)
         TotalPriceLabel.Name = "TotalPriceLabel"
         TotalPriceLabel.Size = New Size(42, 20)
         TotalPriceLabel.TabIndex = 2
         TotalPriceLabel.Text = "Total"
         ' 
-        ' BillForm
+        ' BillForm1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1243, 586)
+        ClientSize = New Size(1243, 464)
         Controls.Add(TotalPriceLabel)
         Controls.Add(PrintBtn)
         Controls.Add(PurchaseHistoryGridView)
-        Name = "BillForm"
+        Name = "BillForm1"
         Text = "BillForm"
         CType(PurchaseHistoryGridView, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

@@ -55,11 +55,6 @@ Public Class ProductPurchase
         QtyTB.Clear()
         PriceTB.Clear()
         totalTB.Clear()
-    End Sub
-
-    Private Sub CancelBtn_Click(sender As Object, e As EventArgs) Handles CancelBtn.Click
-        Me.Close()
-        BillForm.Show()
 
     End Sub
 End Class
