@@ -22,53 +22,54 @@ Partial Class BillForm1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        PurchaseHistoryGridView = New DataGridView()
-        PrintBtn = New Button()
-        TotalPriceLabel = New Label()
-        CType(PurchaseHistoryGridView, ComponentModel.ISupportInitialize).BeginInit()
-        SuspendLayout()
-        ' 
-        ' PurchaseHistoryGridView
-        ' 
-        PurchaseHistoryGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        PurchaseHistoryGridView.Location = New Point(12, 12)
-        PurchaseHistoryGridView.Name = "PurchaseHistoryGridView"
-        PurchaseHistoryGridView.RowHeadersWidth = 51
-        PurchaseHistoryGridView.RowTemplate.Height = 29
-        PurchaseHistoryGridView.Size = New Size(1219, 346)
-        PurchaseHistoryGridView.TabIndex = 0
-        ' 
-        ' PrintBtn
-        ' 
-        PrintBtn.Location = New Point(560, 423)
-        PrintBtn.Name = "PrintBtn"
-        PrintBtn.Size = New Size(94, 29)
-        PrintBtn.TabIndex = 1
-        PrintBtn.Text = "Button1"
-        PrintBtn.UseVisualStyleBackColor = True
-        ' 
-        ' TotalPriceLabel
-        ' 
-        TotalPriceLabel.AutoSize = True
-        TotalPriceLabel.Location = New Point(12, 393)
-        TotalPriceLabel.Name = "TotalPriceLabel"
-        TotalPriceLabel.Size = New Size(42, 20)
-        TotalPriceLabel.TabIndex = 2
-        TotalPriceLabel.Text = "Total"
-        ' 
-        ' BillForm1
-        ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
-        AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1243, 464)
-        Controls.Add(TotalPriceLabel)
-        Controls.Add(PrintBtn)
-        Controls.Add(PurchaseHistoryGridView)
-        Name = "BillForm1"
-        Text = "BillForm"
-        CType(PurchaseHistoryGridView, ComponentModel.ISupportInitialize).EndInit()
-        ResumeLayout(False)
-        PerformLayout()
+        Me.PurchaseHistoryGridView = New System.Windows.Forms.DataGridView()
+        Me.PrintBtn = New System.Windows.Forms.Button()
+        Me.TotalPriceLabel = New System.Windows.Forms.Label()
+        CType(Me.PurchaseHistoryGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'PurchaseHistoryGridView
+        '
+        Me.PurchaseHistoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.PurchaseHistoryGridView.Location = New System.Drawing.Point(12, 12)
+        Me.PurchaseHistoryGridView.Name = "PurchaseHistoryGridView"
+        Me.PurchaseHistoryGridView.RowHeadersWidth = 51
+        Me.PurchaseHistoryGridView.RowTemplate.Height = 29
+        Me.PurchaseHistoryGridView.Size = New System.Drawing.Size(1219, 346)
+        Me.PurchaseHistoryGridView.TabIndex = 0
+        '
+        'PrintBtn
+        '
+        Me.PrintBtn.Location = New System.Drawing.Point(560, 423)
+        Me.PrintBtn.Name = "PrintBtn"
+        Me.PrintBtn.Size = New System.Drawing.Size(94, 29)
+        Me.PrintBtn.TabIndex = 1
+        Me.PrintBtn.Text = "Button1"
+        Me.PrintBtn.UseVisualStyleBackColor = True
+        '
+        'TotalPriceLabel
+        '
+        Me.TotalPriceLabel.AutoSize = True
+        Me.TotalPriceLabel.Location = New System.Drawing.Point(12, 393)
+        Me.TotalPriceLabel.Name = "TotalPriceLabel"
+        Me.TotalPriceLabel.Size = New System.Drawing.Size(42, 20)
+        Me.TotalPriceLabel.TabIndex = 2
+        Me.TotalPriceLabel.Text = "Total"
+        '
+        'BillForm1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1243, 464)
+        Me.Controls.Add(Me.TotalPriceLabel)
+        Me.Controls.Add(Me.PrintBtn)
+        Me.Controls.Add(Me.PurchaseHistoryGridView)
+        Me.Name = "BillForm1"
+        Me.Text = "BillForm"
+        CType(Me.PurchaseHistoryGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
     Friend WithEvents PurchaseHistoryGridView As DataGridView

@@ -25,9 +25,9 @@ Partial Class CustomerHomeForm
         Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
         Me.ProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PurchaseProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.FeedbackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip3.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -56,15 +56,6 @@ Partial Class CustomerHomeForm
         Me.PurchaseProductToolStripMenuItem.Size = New System.Drawing.Size(247, 30)
         Me.PurchaseProductToolStripMenuItem.Text = "Purchase Product"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(619, 142)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Logout"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'FeedbackToolStripMenuItem
         '
         Me.FeedbackToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RateToolStripMenuItem})
@@ -78,6 +69,15 @@ Partial Class CustomerHomeForm
         Me.RateToolStripMenuItem.Name = "RateToolStripMenuItem"
         Me.RateToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
         Me.RateToolStripMenuItem.Text = " Rate"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(619, 142)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(94, 29)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Logout"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'CustomerHomeForm
         '

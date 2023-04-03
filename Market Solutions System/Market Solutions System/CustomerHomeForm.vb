@@ -20,6 +20,11 @@
     End Sub
 
     Private Sub RateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RateToolStripMenuItem.Click
+        FeedbackForm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub FeedbackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FeedbackToolStripMenuItem.Click
 
     End Sub
 End Class

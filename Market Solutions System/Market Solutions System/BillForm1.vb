@@ -5,7 +5,14 @@ Public Class BillForm1
     Private conn As SQLiteConnection = Login.conn
     Private WithEvents PrintDocument1 As New Printing.PrintDocument
 
+    Public Sub New()
 
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+
+    End Sub
     Public Sub New(totalPrice As Integer)
         InitializeComponent()
         TotalPriceLabel.Text = totalPrice.ToString()
@@ -56,5 +63,9 @@ Public Class BillForm1
         Next
 
         e.Graphics.DrawString($"Total Price: {TotalPriceLabel.Text}", font, Brushes.Black, 10, startY + 20)
+    End Sub
+
+    Private Sub BillForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
