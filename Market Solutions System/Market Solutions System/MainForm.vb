@@ -35,7 +35,6 @@ Public Class MainForm
 
     Private Sub CashSalesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CashSalesToolStripMenuItem.Click
         Me.Hide()
-
         BillForm1.Show()
     End Sub
 End Class
