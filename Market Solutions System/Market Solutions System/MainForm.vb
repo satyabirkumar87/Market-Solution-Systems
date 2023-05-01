@@ -37,4 +37,9 @@ Public Class MainForm
         Me.Hide()
         BillForm1.Show()
     End Sub
+
+    Private Sub RemoveProductsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RemoveProductsToolStripMenuItem.Click
+        Me.Hide()
+        RemoveProduct.Show()
+    End Sub
 End Class

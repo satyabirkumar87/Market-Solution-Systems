@@ -39,4 +39,5 @@ Public Class AddProductForm
         Me.Hide()
         MainForm.Show()
     End Sub
+
 End Class

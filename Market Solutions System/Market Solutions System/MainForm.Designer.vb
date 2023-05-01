@@ -28,6 +28,7 @@ Partial Class MainForm
         ProductToolStripMenuItem = New ToolStripMenuItem()
         AddProductToolStripMenuItem = New ToolStripMenuItem()
         ViewProductsToolStripMenuItem = New ToolStripMenuItem()
+        RemoveProductsToolStripMenuItem = New ToolStripMenuItem()
         EmployeeToolStripMenuItem = New ToolStripMenuItem()
         AddManufacturerToolStripMenuItem = New ToolStripMenuItem()
         Button1 = New Button()
@@ -55,12 +56,12 @@ Partial Class MainForm
         ' CashSalesToolStripMenuItem
         ' 
         CashSalesToolStripMenuItem.Name = "CashSalesToolStripMenuItem"
-        CashSalesToolStripMenuItem.Size = New Size(224, 30)
+        CashSalesToolStripMenuItem.Size = New Size(125, 30)
         CashSalesToolStripMenuItem.Text = "Bill"
         ' 
         ' ProductToolStripMenuItem
         ' 
-        ProductToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddProductToolStripMenuItem, ViewProductsToolStripMenuItem})
+        ProductToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddProductToolStripMenuItem, ViewProductsToolStripMenuItem, RemoveProductsToolStripMenuItem})
         ProductToolStripMenuItem.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
         ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
         ProductToolStripMenuItem.Size = New Size(93, 29)
@@ -69,14 +70,20 @@ Partial Class MainForm
         ' AddProductToolStripMenuItem
         ' 
         AddProductToolStripMenuItem.Name = "AddProductToolStripMenuItem"
-        AddProductToolStripMenuItem.Size = New Size(219, 30)
+        AddProductToolStripMenuItem.Size = New Size(247, 30)
         AddProductToolStripMenuItem.Text = "Add Product"
         ' 
         ' ViewProductsToolStripMenuItem
         ' 
         ViewProductsToolStripMenuItem.Name = "ViewProductsToolStripMenuItem"
-        ViewProductsToolStripMenuItem.Size = New Size(219, 30)
+        ViewProductsToolStripMenuItem.Size = New Size(247, 30)
         ViewProductsToolStripMenuItem.Text = "View Products"
+        ' 
+        ' RemoveProductsToolStripMenuItem
+        ' 
+        RemoveProductsToolStripMenuItem.Name = "RemoveProductsToolStripMenuItem"
+        RemoveProductsToolStripMenuItem.Size = New Size(247, 30)
+        RemoveProductsToolStripMenuItem.Text = "Remove Products"
         ' 
         ' EmployeeToolStripMenuItem
         ' 
@@ -94,11 +101,11 @@ Partial Class MainForm
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(587, 123)
+        Button1.Location = New Point(677, 36)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 1
-        Button1.Text = "Logout"
+        Button1.Text = "< Logout"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' MainForm
@@ -126,4 +133,5 @@ Partial Class MainForm
     Friend WithEvents ViewProductsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddManufacturerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Button1 As Button
+    Friend WithEvents RemoveProductsToolStripMenuItem As ToolStripMenuItem
 End Class

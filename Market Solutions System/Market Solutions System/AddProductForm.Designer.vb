@@ -34,8 +34,6 @@ Partial Class AddProductForm
         ProdNameTB = New TextBox()
         UnitPriceTB = New TextBox()
         Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
         backBtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -142,30 +140,12 @@ Partial Class AddProductForm
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(271, 390)
+        Button1.Location = New Point(492, 390)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 15
         Button1.Text = "ADD"
         Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Button2
-        ' 
-        Button2.Location = New Point(540, 390)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(94, 29)
-        Button2.TabIndex = 16
-        Button2.Text = "EDIT"
-        Button2.UseVisualStyleBackColor = True
-        ' 
-        ' Button3
-        ' 
-        Button3.Location = New Point(833, 390)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(94, 29)
-        Button3.TabIndex = 17
-        Button3.Text = "REMOVE"
-        Button3.UseVisualStyleBackColor = True
         ' 
         ' backBtn
         ' 
@@ -182,8 +162,6 @@ Partial Class AddProductForm
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1078, 492)
         Controls.Add(backBtn)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(UnitPriceTB)
         Controls.Add(ProdNameTB)
@@ -215,7 +193,5 @@ Partial Class AddProductForm
     Friend WithEvents ProdNameTB As TextBox
     Friend WithEvents UnitPriceTB As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents backBtn As Button
 End Class
