@@ -33,12 +33,19 @@ Partial Class ProductPurchase
         Label4 = New Label()
         totalTB = New TextBox()
         Button2 = New Button()
+        OrderDGV = New DataGridView()
+        ProdName = New DataGridViewTextBoxColumn()
+        ProdPrice = New DataGridViewTextBoxColumn()
+        ProdQty = New DataGridViewTextBoxColumn()
+        addBtn = New Button()
+        Total = New DataGridViewTextBoxColumn()
+        CType(OrderDGV, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(239, 102)
+        Label1.Location = New Point(827, 131)
         Label1.Name = "Label1"
         Label1.Size = New Size(104, 20)
         Label1.TabIndex = 0
@@ -47,7 +54,7 @@ Partial Class ProductPurchase
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(239, 152)
+        Label2.Location = New Point(827, 181)
         Label2.Name = "Label2"
         Label2.Size = New Size(41, 20)
         Label2.TabIndex = 1
@@ -56,7 +63,7 @@ Partial Class ProductPurchase
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(239, 205)
+        Label3.Location = New Point(827, 234)
         Label3.Name = "Label3"
         Label3.Size = New Size(65, 20)
         Label3.TabIndex = 2
@@ -66,14 +73,14 @@ Partial Class ProductPurchase
         ' 
         ProdNameCB.DropDownStyle = ComboBoxStyle.DropDownList
         ProdNameCB.FormattingEnabled = True
-        ProdNameCB.Location = New Point(433, 99)
+        ProdNameCB.Location = New Point(1065, 123)
         ProdNameCB.Name = "ProdNameCB"
         ProdNameCB.Size = New Size(125, 28)
         ProdNameCB.TabIndex = 3
         ' 
         ' PriceTB
         ' 
-        PriceTB.Location = New Point(433, 145)
+        PriceTB.Location = New Point(1065, 169)
         PriceTB.Name = "PriceTB"
         PriceTB.ReadOnly = True
         PriceTB.Size = New Size(125, 27)
@@ -81,14 +88,14 @@ Partial Class ProductPurchase
         ' 
         ' QtyTB
         ' 
-        QtyTB.Location = New Point(433, 198)
+        QtyTB.Location = New Point(1065, 222)
         QtyTB.Name = "QtyTB"
         QtyTB.Size = New Size(125, 27)
         QtyTB.TabIndex = 5
         ' 
         ' PurchaseBtn
         ' 
-        PurchaseBtn.Location = New Point(210, 337)
+        PurchaseBtn.Location = New Point(581, 599)
         PurchaseBtn.Name = "PurchaseBtn"
         PurchaseBtn.Size = New Size(94, 29)
         PurchaseBtn.TabIndex = 6
@@ -97,7 +104,7 @@ Partial Class ProductPurchase
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(672, 24)
+        Button1.Location = New Point(1134, 23)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 8
@@ -107,7 +114,7 @@ Partial Class ProductPurchase
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(239, 245)
+        Label4.Location = New Point(827, 274)
         Label4.Name = "Label4"
         Label4.Size = New Size(42, 20)
         Label4.TabIndex = 9
@@ -115,7 +122,7 @@ Partial Class ProductPurchase
         ' 
         ' totalTB
         ' 
-        totalTB.Location = New Point(433, 244)
+        totalTB.Location = New Point(1065, 268)
         totalTB.Name = "totalTB"
         totalTB.ReadOnly = True
         totalTB.Size = New Size(125, 27)
@@ -123,18 +130,68 @@ Partial Class ProductPurchase
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(505, 337)
+        Button2.Location = New Point(1096, 361)
         Button2.Name = "Button2"
         Button2.Size = New Size(94, 29)
         Button2.TabIndex = 11
         Button2.Text = "Reset"
         Button2.UseVisualStyleBackColor = True
         ' 
+        ' OrderDGV
+        ' 
+        OrderDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        OrderDGV.Columns.AddRange(New DataGridViewColumn() {ProdName, ProdPrice, ProdQty, Total})
+        OrderDGV.Location = New Point(12, 123)
+        OrderDGV.Name = "OrderDGV"
+        OrderDGV.RowHeadersWidth = 51
+        OrderDGV.RowTemplate.Height = 29
+        OrderDGV.Size = New Size(683, 285)
+        OrderDGV.TabIndex = 12
+        ' 
+        ' ProdName
+        ' 
+        ProdName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        ProdName.HeaderText = "Product Name"
+        ProdName.MinimumWidth = 6
+        ProdName.Name = "ProdName"
+        ' 
+        ' ProdPrice
+        ' 
+        ProdPrice.HeaderText = "Product Price"
+        ProdPrice.MinimumWidth = 6
+        ProdPrice.Name = "ProdPrice"
+        ProdPrice.Width = 125
+        ' 
+        ' ProdQty
+        ' 
+        ProdQty.HeaderText = "Quantity"
+        ProdQty.MinimumWidth = 6
+        ProdQty.Name = "ProdQty"
+        ProdQty.Width = 125
+        ' 
+        ' addBtn
+        ' 
+        addBtn.Location = New Point(827, 361)
+        addBtn.Name = "addBtn"
+        addBtn.Size = New Size(94, 29)
+        addBtn.TabIndex = 13
+        addBtn.Text = "Add"
+        addBtn.UseVisualStyleBackColor = True
+        ' 
+        ' Total
+        ' 
+        Total.HeaderText = "Total"
+        Total.MinimumWidth = 6
+        Total.Name = "Total"
+        Total.Width = 125
+        ' 
         ' ProductPurchase
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(1269, 736)
+        Controls.Add(addBtn)
+        Controls.Add(OrderDGV)
         Controls.Add(Button2)
         Controls.Add(totalTB)
         Controls.Add(Label4)
@@ -148,6 +205,7 @@ Partial Class ProductPurchase
         Controls.Add(Label1)
         Name = "ProductPurchase"
         Text = "ProductPurchase"
+        CType(OrderDGV, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -163,4 +221,10 @@ Partial Class ProductPurchase
     Friend WithEvents Label4 As Label
     Friend WithEvents totalTB As TextBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents OrderDGV As DataGridView
+    Friend WithEvents addBtn As Button
+    Friend WithEvents ProdName As DataGridViewTextBoxColumn
+    Friend WithEvents ProdPrice As DataGridViewTextBoxColumn
+    Friend WithEvents ProdQty As DataGridViewTextBoxColumn
+    Friend WithEvents Total As DataGridViewTextBoxColumn
 End Class
