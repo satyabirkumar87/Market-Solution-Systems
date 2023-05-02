@@ -26,12 +26,12 @@ CREATE TABLE product (
 
 
 CREATE TABLE customer (
-	ID		TEXT(8)	NOT NULL,
-	Username	TEXT		PRIMARY KEY,
-	Password	TEXT		NOT NULL,
-	Gender	TEXT		NOT NULL,
-	PhoneNo	TEXT(10)	Not NULL,
-	Address	TEXT		NOT NULL
+	ID			TEXT(8)		NOT NULL,
+	Username	TEXT	PRIMARY KEY,
+	Password	TEXT	NOT NULL,
+	Gender		TEXT		NOT NULL,
+	PhoneNo		TEXT(10)	Not NULL,
+	Address		TEXT		NOT NULL
 );
 
 
@@ -49,4 +49,13 @@ create table company (
 	Name	TEXT	PRIMARY KEY,
 	Address	TEXT	NOT NULL,
 	PhoneNo	TEXT	NOT NULL
+);
+
+
+CREATE TABLE Feedback (
+	FDID		INTEGER	PRIMARY KEY AUTOINCREMENT,	
+	CustID		TEXT	REFERENCES customer(ID),
+	ProdName	TEXT	REFERENCES product(Name),
+	Rating		INTEGER NOT NULL,
+	Feedback	Text	NOT NULL
 );

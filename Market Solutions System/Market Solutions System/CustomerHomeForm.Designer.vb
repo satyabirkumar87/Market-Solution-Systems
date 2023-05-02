@@ -22,77 +22,76 @@ Partial Class CustomerHomeForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
-        Me.ProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PurchaseProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FeedbackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.MenuStrip3.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'MenuStrip3
-        '
-        Me.MenuStrip3.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductToolStripMenuItem, Me.FeedbackToolStripMenuItem})
-        Me.MenuStrip3.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip3.Name = "MenuStrip3"
-        Me.MenuStrip3.Size = New System.Drawing.Size(800, 33)
-        Me.MenuStrip3.TabIndex = 2
-        Me.MenuStrip3.Text = "MenuStrip3"
-        '
-        'ProductToolStripMenuItem
-        '
-        Me.ProductToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PurchaseProductToolStripMenuItem})
-        Me.ProductToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
-        Me.ProductToolStripMenuItem.Size = New System.Drawing.Size(93, 29)
-        Me.ProductToolStripMenuItem.Text = "Product"
-        '
-        'PurchaseProductToolStripMenuItem
-        '
-        Me.PurchaseProductToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.PurchaseProductToolStripMenuItem.Name = "PurchaseProductToolStripMenuItem"
-        Me.PurchaseProductToolStripMenuItem.Size = New System.Drawing.Size(247, 30)
-        Me.PurchaseProductToolStripMenuItem.Text = "Purchase Product"
-        '
-        'FeedbackToolStripMenuItem
-        '
-        Me.FeedbackToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RateToolStripMenuItem})
-        Me.FeedbackToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
-        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(104, 29)
-        Me.FeedbackToolStripMenuItem.Text = "feedback"
-        '
-        'RateToolStripMenuItem
-        '
-        Me.RateToolStripMenuItem.Name = "RateToolStripMenuItem"
-        Me.RateToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
-        Me.RateToolStripMenuItem.Text = " Rate"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(619, 142)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Logout"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'CustomerHomeForm
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.MenuStrip3)
-        Me.Name = "CustomerHomeForm"
-        Me.Text = "CustomerHomeForm"
-        Me.MenuStrip3.ResumeLayout(False)
-        Me.MenuStrip3.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        MenuStrip3 = New MenuStrip()
+        ProductToolStripMenuItem = New ToolStripMenuItem()
+        PurchaseProductToolStripMenuItem = New ToolStripMenuItem()
+        FeedbackToolStripMenuItem = New ToolStripMenuItem()
+        RateToolStripMenuItem = New ToolStripMenuItem()
+        Button1 = New Button()
+        MenuStrip3.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' MenuStrip3
+        ' 
+        MenuStrip3.ImageScalingSize = New Size(20, 20)
+        MenuStrip3.Items.AddRange(New ToolStripItem() {ProductToolStripMenuItem, FeedbackToolStripMenuItem})
+        MenuStrip3.Location = New Point(0, 0)
+        MenuStrip3.Name = "MenuStrip3"
+        MenuStrip3.Size = New Size(800, 33)
+        MenuStrip3.TabIndex = 2
+        MenuStrip3.Text = "MenuStrip3"
+        ' 
+        ' ProductToolStripMenuItem
+        ' 
+        ProductToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {PurchaseProductToolStripMenuItem})
+        ProductToolStripMenuItem.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
+        ProductToolStripMenuItem.Size = New Size(93, 29)
+        ProductToolStripMenuItem.Text = "Product"
+        ' 
+        ' PurchaseProductToolStripMenuItem
+        ' 
+        PurchaseProductToolStripMenuItem.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        PurchaseProductToolStripMenuItem.Name = "PurchaseProductToolStripMenuItem"
+        PurchaseProductToolStripMenuItem.Size = New Size(247, 30)
+        PurchaseProductToolStripMenuItem.Text = "Purchase Product"
+        ' 
+        ' FeedbackToolStripMenuItem
+        ' 
+        FeedbackToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {RateToolStripMenuItem})
+        FeedbackToolStripMenuItem.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
+        FeedbackToolStripMenuItem.Size = New Size(104, 29)
+        FeedbackToolStripMenuItem.Text = "feedback"
+        ' 
+        ' RateToolStripMenuItem
+        ' 
+        RateToolStripMenuItem.Name = "RateToolStripMenuItem"
+        RateToolStripMenuItem.Size = New Size(142, 30)
+        RateToolStripMenuItem.Text = " Rate"
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(678, 36)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 29)
+        Button1.TabIndex = 3
+        Button1.Text = "< Logout"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' CustomerHomeForm
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(Button1)
+        Controls.Add(MenuStrip3)
+        Name = "CustomerHomeForm"
+        Text = "CustomerHomeForm"
+        MenuStrip3.ResumeLayout(False)
+        MenuStrip3.PerformLayout()
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents MenuStrip3 As MenuStrip

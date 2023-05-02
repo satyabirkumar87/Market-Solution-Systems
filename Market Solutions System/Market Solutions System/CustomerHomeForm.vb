@@ -7,8 +7,11 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Login.Show()
-
-
+        Login.CustLoginInfo.username = ""
+        Login.CustLoginInfo.id = ""
+        Login.CustLoginInfo.gender = ""
+        Login.CustLoginInfo.phoneno = ""
+        Login.CustLoginInfo.address = ""
     End Sub
 
 

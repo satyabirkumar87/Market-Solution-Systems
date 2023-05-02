@@ -3,6 +3,7 @@ Imports System.IO
 
 Public Class Login
     Public conn As SQLiteConnection
+    Public CustLoginInfo As New LoginInfo
     Public Sub New()
         InitializeComponent()
         Dim path, dbPath, connString As String
@@ -33,6 +34,12 @@ Public Class Login
         Dim reader = cmd.ExecuteReader()
         If reader.Read() Then
             If reader("Username") = username And reader("Password") = password Then
+                CustLoginInfo.username = reader("Username")
+                CustLoginInfo.id = reader("ID")
+                CustLoginInfo.gender = reader("Gender")
+                CustLoginInfo.phoneno = reader("PhoneNo")
+                CustLoginInfo.address = reader("Address")
+
                 MessageBox.Show("Login Successfull")
                 reader.Close()
                 conn.Close()
@@ -53,4 +60,16 @@ Public Class Login
     Private Sub custPasswordTB_TextChanged(sender As Object, e As EventArgs) Handles custPasswordTB.TextChanged
 
     End Sub
+End Class
+
+
+
+
+
+Public Class LoginInfo
+    Public username As String = ""
+    Public id As String = ""
+    Public gender As String = ""
+    Public phoneno As String = ""
+    Public address As String = ""
 End Class
