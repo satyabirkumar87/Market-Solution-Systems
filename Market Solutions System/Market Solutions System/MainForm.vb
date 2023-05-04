@@ -42,4 +42,9 @@ Public Class MainForm
         Me.Hide()
         RemoveProduct.Show()
     End Sub
+
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+        Me.Hide()
+        viewfeedback.Show()
+    End Sub
 End Class
