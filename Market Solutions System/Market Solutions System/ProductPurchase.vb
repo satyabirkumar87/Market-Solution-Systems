@@ -19,6 +19,7 @@ Public Class ProductPurchase
         For Each prodName As String In ProductList.Keys
             ProdNameCB.Items.Add(prodName)
         Next
+
     End Sub
 
 
@@ -34,8 +35,6 @@ Public Class ProductPurchase
                 If Not prodName = "" Then
                     Dim sqlQuery As String = $"UPDATE product SET ProdQty = ProdQty - {prodQty} WHERE Name='{prodName}'"
                     Dim purchaseQuery As String = $"INSERT INTO cash_sale (ProdName, ProdQty, Discount) Values ('{prodName}', {prodQty}, 0)"
-                    MessageBox.Show(sqlQuery)
-                    MessageBox.Show(purchaseQuery)
                     Dim cmd As New SQLiteCommand(sqlQuery, conn)
                     Dim purchaseCmd As New SQLiteCommand(purchaseQuery, conn)
                     cmd.ExecuteNonQuery()
@@ -67,11 +66,12 @@ Public Class ProductPurchase
         ProdNameCB.SelectedIndex = -1
         QtyTB.Clear()
         PriceTB.Clear()
-        totalTB.Clear()
+        totalTB.Text = 0
         OrderDGV.Rows.Clear()
     End Sub
 
     Private Sub addBtn_Click(sender As Object, e As EventArgs) Handles addBtn.Click
+        totalTB.Text = CInt(totalTB.Text) + ProductList(ProdNameCB.Text)
         Dim prodFound As Integer = 0
         If QtyTB.Text = "" Then
             MessageBox.Show("Enter Quantity First")
@@ -87,8 +87,8 @@ Public Class ProductPurchase
         If prodFound = 0 Then
             Dim index As Integer = OrderDGV.Rows.Add()
             Dim prodName As String = ProdNameCB.Text
-            Dim prodPrice As Integer = CInt(PriceTB.Text)
-            Dim ProdQty As Integer = CInt(QtyTB.Text)
+            Dim prodPrice As Integer = PriceTB.Text
+            Dim ProdQty As Integer = QtyTB.Text
             OrderDGV.Rows(index).Cells("ProdName").Value = ProdNameCB.Text
             OrderDGV.Rows(index).Cells("ProdPrice").Value = prodPrice
             OrderDGV.Rows(index).Cells("ProdQty").Value = ProdQty

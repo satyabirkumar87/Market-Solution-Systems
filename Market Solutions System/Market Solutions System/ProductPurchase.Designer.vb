@@ -37,15 +37,16 @@ Partial Class ProductPurchase
         ProdName = New DataGridViewTextBoxColumn()
         ProdPrice = New DataGridViewTextBoxColumn()
         ProdQty = New DataGridViewTextBoxColumn()
-        addBtn = New Button()
         Total = New DataGridViewTextBoxColumn()
+        addBtn = New Button()
+        Label7 = New Label()
         CType(OrderDGV, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(827, 131)
+        Label1.Location = New Point(827, 207)
         Label1.Name = "Label1"
         Label1.Size = New Size(104, 20)
         Label1.TabIndex = 0
@@ -54,7 +55,7 @@ Partial Class ProductPurchase
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(827, 181)
+        Label2.Location = New Point(827, 257)
         Label2.Name = "Label2"
         Label2.Size = New Size(41, 20)
         Label2.TabIndex = 1
@@ -63,7 +64,7 @@ Partial Class ProductPurchase
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(827, 234)
+        Label3.Location = New Point(827, 310)
         Label3.Name = "Label3"
         Label3.Size = New Size(65, 20)
         Label3.TabIndex = 2
@@ -73,14 +74,14 @@ Partial Class ProductPurchase
         ' 
         ProdNameCB.DropDownStyle = ComboBoxStyle.DropDownList
         ProdNameCB.FormattingEnabled = True
-        ProdNameCB.Location = New Point(1065, 123)
+        ProdNameCB.Location = New Point(1065, 199)
         ProdNameCB.Name = "ProdNameCB"
         ProdNameCB.Size = New Size(125, 28)
         ProdNameCB.TabIndex = 3
         ' 
         ' PriceTB
         ' 
-        PriceTB.Location = New Point(1065, 169)
+        PriceTB.Location = New Point(1065, 245)
         PriceTB.Name = "PriceTB"
         PriceTB.ReadOnly = True
         PriceTB.Size = New Size(125, 27)
@@ -88,7 +89,7 @@ Partial Class ProductPurchase
         ' 
         ' QtyTB
         ' 
-        QtyTB.Location = New Point(1065, 222)
+        QtyTB.Location = New Point(1065, 298)
         QtyTB.Name = "QtyTB"
         QtyTB.Size = New Size(125, 27)
         QtyTB.TabIndex = 5
@@ -114,7 +115,7 @@ Partial Class ProductPurchase
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(827, 274)
+        Label4.Location = New Point(827, 350)
         Label4.Name = "Label4"
         Label4.Size = New Size(42, 20)
         Label4.TabIndex = 9
@@ -122,15 +123,16 @@ Partial Class ProductPurchase
         ' 
         ' totalTB
         ' 
-        totalTB.Location = New Point(1065, 268)
+        totalTB.Location = New Point(1065, 344)
         totalTB.Name = "totalTB"
         totalTB.ReadOnly = True
         totalTB.Size = New Size(125, 27)
         totalTB.TabIndex = 10
+        totalTB.Text = "0"
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(1096, 361)
+        Button2.Location = New Point(1096, 437)
         Button2.Name = "Button2"
         Button2.Size = New Size(94, 29)
         Button2.TabIndex = 11
@@ -141,7 +143,7 @@ Partial Class ProductPurchase
         ' 
         OrderDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         OrderDGV.Columns.AddRange(New DataGridViewColumn() {ProdName, ProdPrice, ProdQty, Total})
-        OrderDGV.Location = New Point(12, 123)
+        OrderDGV.Location = New Point(12, 199)
         OrderDGV.Name = "OrderDGV"
         OrderDGV.RowHeadersWidth = 51
         OrderDGV.RowTemplate.Height = 29
@@ -169,15 +171,6 @@ Partial Class ProductPurchase
         ProdQty.Name = "ProdQty"
         ProdQty.Width = 125
         ' 
-        ' addBtn
-        ' 
-        addBtn.Location = New Point(827, 361)
-        addBtn.Name = "addBtn"
-        addBtn.Size = New Size(94, 29)
-        addBtn.TabIndex = 13
-        addBtn.Text = "Add"
-        addBtn.UseVisualStyleBackColor = True
-        ' 
         ' Total
         ' 
         Total.HeaderText = "Total"
@@ -185,11 +178,31 @@ Partial Class ProductPurchase
         Total.Name = "Total"
         Total.Width = 125
         ' 
+        ' addBtn
+        ' 
+        addBtn.Location = New Point(827, 437)
+        addBtn.Name = "addBtn"
+        addBtn.Size = New Size(94, 29)
+        addBtn.TabIndex = 13
+        addBtn.Text = "Add"
+        addBtn.UseVisualStyleBackColor = True
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        Label7.Location = New Point(510, 36)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(248, 38)
+        Label7.TabIndex = 16
+        Label7.Text = "Purchase Product"
+        ' 
         ' ProductPurchase
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1269, 736)
+        Controls.Add(Label7)
         Controls.Add(addBtn)
         Controls.Add(OrderDGV)
         Controls.Add(Button2)
@@ -227,4 +240,5 @@ Partial Class ProductPurchase
     Friend WithEvents ProdPrice As DataGridViewTextBoxColumn
     Friend WithEvents ProdQty As DataGridViewTextBoxColumn
     Friend WithEvents Total As DataGridViewTextBoxColumn
+    Friend WithEvents Label7 As Label
 End Class
