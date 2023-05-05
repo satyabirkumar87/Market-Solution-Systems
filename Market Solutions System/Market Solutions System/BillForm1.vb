@@ -84,4 +84,9 @@ Public Class BillForm1
     Private Sub refreshBtn_Click(sender As Object, e As EventArgs) Handles refreshBtn.Click
         RefreshBill()
     End Sub
+
+    Private Sub backbtn_Click(sender As Object, e As EventArgs) Handles backbtn.Click
+        Me.Hide()
+        MainForm.Show()
+    End Sub
 End Class
